@@ -2804,7 +2804,7 @@ var Mad = (function ($) {
           $(bgImg).addClass('flicker')
           setTimeout(() => {
             $(bgImg).removeClass('flicker')
-            bgImg.style.backgroundImage = `url("images/entity_bg${bgCount}.jpg")`
+            bgImg.style.backgroundImage = `url("images/content/home/entity_bg${bgCount}.jpg")`
           }, 300)
         })
       })
