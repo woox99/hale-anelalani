@@ -17,14 +17,13 @@
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
         rel="stylesheet" />
-    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css" />
-    <!--================ Theme CSS ================-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendors/arcticmodal/jquery.arcticmodal-0.3.css" />
+    <link rel="stylesheet" href="/vendors/owl-carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/vendors/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <!--================ Vendor JS ================-->
 </head>
 
@@ -36,91 +35,7 @@
 
 
             <!--================ Header ================-->
-            <header id="mad-header" class="mad-header">
-                <div class="mad-header-section--sticky-xl">
-                    <div class="container-fluid">
-                        <div class="mad-header-items">
-                            <div class="mad-header-item">
-                                <a href="index.html" class="mad-logo"><img src="images/content/logo.png" alt=""
-                                        style="height:80px" /></a>
-                            </div>
-                            <div class="mad-header-item">
-                                <!--================ Navigation ================-->
-                                <nav class="mad-navigation-container">
-                                    <ul class="mad-navigation mad-navigation--vertical-sm">
-                                        <li class="menu-item current-menu-item">
-                                            <a href="index.html">Home</a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">What We Offer</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="respite-care.html">Respite Care</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="respite-care.html">End of Life Care</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="respite-care.html">Bereavement Support</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href=respite-care.html">Community Engagement</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="respite-care.html">Theraputic Activities</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="our-story.html">Our Story</a>
-                                            <!-- <ul class="sub-menu">
-                        <li class="menu-item">
-                          <a href="about/our_story.html">Our Story</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="pages_history.html">Our Mission & Vision</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="pages_history.html">Our Team</a>
-                        </li>
-                      </ul> -->
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="events_list.html">Family Stories</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="about/our_story.html">Davin's Story</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="about/our_story.html">Skylar's Story</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="pages_history.html">Aspen's Story</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="pages_history.html">Piki's Story</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="events_list.html">Volunteer</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <div class="mad-actions">
-                                    <!-- <div class="mad-col">
-                    <a href="#" data-arctic-modal="#search-modal"><i class="material-icons">search</i></a>
-                  </div> -->
-                                    <div class="mad-col">
-                                        <a href="pages_donate.html" class="btn btn-big"><span>Donate</span> <i
-                                                class="icon"><img src="charity_icons_svg/heart.svg" alt="" /></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            {% include 'nav.html' %}
             <!--================ End of Header ================-->
 
             <!-- Gallery -->
@@ -151,11 +66,11 @@
                         <div class="mad-entities mad-team type-4">
                             <article class="mad-entity mad-entity-single">
                                 <div class="mad-entity-media">
-                                    <img src="images/744x768_photo1.jpg" alt="" />
+                                    <img src="/images/744x768_photo1.jpg" alt="" />
                                 </div>
                                 <div class="mad-entity-content">
                                     <div class="content-element-6">
-                                        <h2 class="mad-title">Piki's Story</h2>
+                                        <h2 class="mad-title">Aspen's Story</h2>
                                     </div>
                                     <div class="content-element-4">
                                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ut
@@ -182,9 +97,9 @@
             <!-- Other Stories -->
             <div class="mad-section mad-section--stretched-content mad-colorizer--scheme-color-">
                 <div class="mad-texture-holder">
-                    <span class="mad-img-texture2 bg-move"><img src="images/texture_move2.svg" alt=""
+                    <span class="mad-img-texture2 bg-move"><img src="/images/texture_move2.svg" alt=""
                             class="svg" /></span>
-                    <span class="mad-img-texture3 bg-move"><img src="images/texture_move3.svg" alt=""
+                    <span class="mad-img-texture3 bg-move"><img src="/images/texture_move3.svg" alt=""
                             class="svg" /></span>
                 </div>
                 <div class="container">
@@ -201,17 +116,18 @@
                             <!--================ Entity ================-->
                             <article class="mad-entity">
                                 <div class="mad-entity-media">
-                                    <a href="portfolio_single_img.html"><img src="images/475x576_img1.jpg" alt="" /></a>
+                                    <a href="/read-skylars-story/"><img src="/images/475x576_img1.jpg"
+                                            alt="" /></a>
                                 </div>
                                 <div class="mad-entity-content">
                                     <div class="mad-entity-header">
                                         <h5 class="mad-entity-title">
-                                            <a href="portfolio_single_img.html">Skylar's Story</a>
+                                            <a href="/read-skylars-story/">Skylar's Story</a>
                                         </h5>
                                         <p> Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean
                                             auctor wisi et
                                             urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. </p>
-                                        <a href="pages_what_we_do" class="mad-text-link"><span>Read More</span> <span
+                                        <a href="/read-skylars-story/" class="mad-text-link"><span>Read More</span> <span
                                                 class="icon material-icons"> arrow_forward_ios </span></a>
                                     </div>
                                 </div>
@@ -222,17 +138,18 @@
                             <!--================ Entity ================-->
                             <article class="mad-entity">
                                 <div class="mad-entity-media">
-                                    <a href="portfolio_single_img.html"><img src="images/475x576_img2.jpg" alt="" /></a>
+                                    <a href="/read-davins-story/"><img src="/images/475x576_img2.jpg"
+                                            alt="" /></a>
                                 </div>
                                 <div class="mad-entity-content">
                                     <div class="mad-entity-header">
                                         <h5 class="mad-entity-title">
-                                            <a href="portfolio_single_img.html">Aspen's Story</a>
+                                            <a href="/read-davins-story/">Davin's Story</a>
                                         </h5>
                                         <p> Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam
                                             elit agna, endrerit
                                             sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. </p>
-                                        <a href="pages_what_we_do" class="mad-text-link"><span>Read More</span> <span
+                                        <a href="/read-davins-story/" class="mad-text-link"><span>Read More</span> <span
                                                 class="icon material-icons"> arrow_forward_ios </span></a>
                                     </div>
                                 </div>
@@ -243,17 +160,18 @@
                             <!--================ Entity ================-->
                             <article class="mad-entity">
                                 <div class="mad-entity-media">
-                                    <a href="portfolio_single_img.html"><img src="images/475x576_img3.jpg" alt="" /></a>
+                                    <a href="/read-pikis-story/"><img src="/images/475x576_img3.jpg"
+                                            alt="" /></a>
                                 </div>
                                 <div class="mad-entity-content">
                                     <div class="mad-entity-header">
                                         <h5 class="mad-entity-title">
-                                            <a href="portfolio_single_img.html">Davin's Story</a>
+                                            <a href="/read-pikis-story/">Piki's Story</a>
                                         </h5>
                                         <p> Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque
                                             eget, malesuada
                                             at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. </p>
-                                        <a href="pages_what_we_do" class="mad-text-link"><span>Read More</span> <span
+                                        <a href=/read-pikis-story/" class="mad-text-link"><span>Read More</span> <span
                                                 class="icon material-icons"> arrow_forward_ios </span></a>
                                     </div>
                                 </div>
@@ -346,25 +264,25 @@
                 <!--================ End of Footer row ================-->
             </footer>
             <!--================ End of Footer ================-->
-            
+
         </div>
     </div>
-    <script src="vendors/modernizr.js"></script>
-    <script src="vendors/jquery-3.6.0.min.js"></script>
-    <script src="vendors/jquery.easing.1.3.min.js"></script>
-    <script src="vendors/monkeysan.jquery.nav.1.0.js"></script>
-    <script src="vendors/monkeysan.validator.min.js"></script>
-    <script src="vendors/monkeysan.tabs.min.js"></script>
-    <script src="vendors/handlebars-v4.0.5.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/fancybox/jquery.fancybox.min.js"></script>
-    <script src="vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
-    <script src="vendors/retina.min.js"></script>
-    <script src="vendors/mad.customselect.js"></script>
-    <script src="js/modules/mad.alert-box.min.js"></script>
-    <script src="js/modules/mad.newsletter-form.min.js"></script>
-    <script src="js/modules/mad.sticky-header-section.min.js"></script>
-    <script src="js/mad.app.js"></script>
+    <script src="/vendors/modernizr.js"></script>
+    <script src="/vendors/jquery-3.6.0.min.js"></script>
+    <script src="/vendors/jquery.easing.1.3.min.js"></script>
+    <script src="/vendors/monkeysan.jquery.nav.1.0.js"></script>
+    <script src="/vendors/monkeysan.validator.min.js"></script>
+    <script src="/vendors/monkeysan.tabs.min.js"></script>
+    <script src="/vendors/handlebars-v4.0.5.min.js"></script>
+    <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="/vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="/vendors/retina.min.js"></script>
+    <script src="/vendors/mad.customselect.js"></script>
+    <script src="/js/modules/mad.alert-box.min.js"></script>
+    <script src="/js/modules/mad.newsletter-form.min.js"></script>
+    <script src="/js/modules/mad.sticky-header-section.min.js"></script>
+    <script src="/js/mad.app.js"></script>
 </body>
 
 </html>

@@ -1848,12 +1848,12 @@ var Mad = (function ($) {
     rtl: App.RTL,
     navText: App.RTL
       ? [
-          '<img class="svg" src="charity_icons_svg/arrow_left.svg" alt="">',
-          '<img class="svg" src="charity_icons_svg/arrow_right.svg" alt="">'
+          '<img class="svg" src="/charity_icons_svg/arrow_left.svg" alt="">',
+          '<img class="svg" src="/charity_icons_svg/arrow_right.svg" alt="">'
         ]
       : [
-          '<img class="svg" src="charity_icons_svg/arrow_left.svg" alt="">',
-          '<img class="svg" src="charity_icons_svg/arrow_right.svg" alt="">'
+          '<img class="svg" src="/charity_icons_svg/arrow_left.svg" alt="">',
+          '<img class="svg" src="/charity_icons_svg/arrow_right.svg" alt="">'
         ],
     dots: true,
     autoplayHoverPause: true,

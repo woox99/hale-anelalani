@@ -17,12 +17,11 @@
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/fontawesome-all.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css" />
-  <!--================ Theme CSS ================-->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/vendors/arcticmodal/jquery.arcticmodal-0.3.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
   <!--================ Vendor JS ================-->
 </head>
 
@@ -33,91 +32,7 @@
 
 
       <!--================ Header ================-->
-      <header id="mad-header" class="mad-header">
-        <div class="mad-header-section--sticky-xl">
-          <div class="container-fluid">
-            <div class="mad-header-items">
-              <div class="mad-header-item">
-                <a href="index.html" class="mad-logo"><img src="images/content/logo.png" alt=""
-                    style="height:80px" /></a>
-              </div>
-              <div class="mad-header-item">
-                <!--================ Navigation ================-->
-                <nav class="mad-navigation-container">
-                  <ul class="mad-navigation mad-navigation--vertical-sm">
-                    <li class="menu-item current-menu-item">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                      <a href="#">What We Offer</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item">
-                          <a href="respite-care.html">Respite Care</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="respite-care.html">End of Life Care</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="respite-care.html">Bereavement Support</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href=respite-care.html">Community Engagement</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="respite-care.html">Theraputic Activities</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <a href="our-story.html">Our Story</a>
-                      <!-- <ul class="sub-menu">
-                        <li class="menu-item">
-                          <a href="about/our_story.html">Our Story</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="pages_history.html">Our Mission & Vision</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="pages_history.html">Our Team</a>
-                        </li>
-                      </ul> -->
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                      <a href="events_list.html">Family Stories</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item">
-                          <a href="about/our_story.html">Davin's Story</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="about/our_story.html">Skylar's Story</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="pages_history.html">Aspen's Story</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="pages_history.html">Piki's Story</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <a href="events_list.html">Volunteer</a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="mad-actions">
-                  <!-- <div class="mad-col">
-                    <a href="#" data-arctic-modal="#search-modal"><i class="material-icons">search</i></a>
-                  </div> -->
-                  <div class="mad-col">
-                    <a href="pages_donate.html" class="btn btn-big"><span>Donate</span> <i class="icon"><img
-                          src="charity_icons_svg/heart.svg" alt="" /></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      {% include 'nav.html' %}
       <!--================ End of Header ================-->
 
       <!--================ Breadcrumb ================-->
@@ -134,7 +49,7 @@
       <!-- Mission Statement -->
       <div class="mad-section with-texture5 mad-colorizer--scheme-color no-pb">
         <div class="mad-texture-holder">
-          <span class="mad-img-texture bg-move"><img src="images/texture_move3.svg" alt="" class="svg" /></span>
+          <span class="mad-img-texture bg-move"><img src="/images/texture_move3.svg" alt="" class="svg" /></span>
         </div>
         <div class="align-center">
           <div class="content-element-6">
@@ -171,7 +86,7 @@
       <div class="mad-content no-pt no-pb">
         <div class="mad-section mad-colorizer--scheme-color">
           <!-- <div class="mad-texture-holder">
-            <span class="mad-img-texture bg-move"><img src="images/texture_move1.svg" alt="" class="svg" /></span>
+            <span class="mad-img-texture bg-move"><img src="/images/texture_move1.svg" alt="" class="svg" /></span>
           </div> -->
           <div class="mad-title-wrap align-center">
             <div class="mad-pre-title">Our Core Values</div>
@@ -247,7 +162,7 @@
           </div>
         </div>
         <!-- <div class="mad-img">
-          <img src="images/1792x680_img1.jpg" alt="" />
+          <img src="/images/1792x680_img1.jpg" alt="" />
         </div> -->
       </div>
       <!-- Values Tree End -->
@@ -264,13 +179,13 @@
       <!--================ End of Breadcrumb ================-->
 
       <!-- Team -->
-      <div class="mad-content">
+      <div class="mad-content" id="our-ohana">
         <div class="container">
           <div class="content-element-main">
             <div class="mad-entities mad-team type-4">
               <article class="mad-entity mad-entity-single">
                 <div class="mad-entity-media">
-                  <img src="images/744x768_photo1.jpg" alt="" />
+                  <img src="/images/744x768_photo1.jpg" alt="" />
                   <!-- <div class="mad-testimonial-bg style-2 content-element-4">
                     <div class="mad-testimonial">
                       <div class="mad-testimonial-info">
@@ -284,8 +199,8 @@
                 </div>
                 <div class="mad-entity-content">
                   <div class="content-element-6">
-                      <span><a href="blog_list_sidebar.html" class="mad-link">RN, BSN,
-                          CHPPN</a></span>
+                    <span><a href="blog_list_sidebar.html" class="mad-link">RN, BSN,
+                        CHPPN</a></span>
                     <h2 class="mad-title">Joline Murillo</h2>
                     <div class="mad-pre-title">Founder & Executive Director</div>
                   </div>
@@ -356,6 +271,8 @@
               </article>
             </div>
           </div>
+
+          <!-- Other Ohana -->
           <div class="content-element-main">
             <h2 class="mad-section-title align-center">Other Ohana</h2>
             <!--================ Team Members ================-->
@@ -363,14 +280,14 @@
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="pages_team.html" class="mad-team-member-photo"><img src="images/475x520_photo7.jpg"
+                  <a href="/team-dianne-fochtman/" class="mad-team-member-photo"><img src="/images/475x520_photo7.jpg"
                       alt="" /></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-header">
-                      <span><a href="blog_list_sidebar.html" class="mad-link">RN, PhD,
-                          CHPNP</a></span>
+                      <span>RN, PhD,
+                        CHPNP</span>
                       <h5 class="mad-team-member-name">
-                        <a href="pages_team.html">Dianne Fochtman</a>
+                        <a href="/team-dianne-fochtman/">Dianne Fochtman</a>
                       </h5>
                       <div class="mad-member-stat">Co-Founder</div>
                       <div class="mad-social-icons">
@@ -397,13 +314,13 @@
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="pages_team.html" class="mad-team-member-photo"><img src="images/475x520_photo8.jpg"
+                  <a href="/team-jasmin-jensen/" class="mad-team-member-photo"><img src="/images/475x520_photo8.jpg"
                       alt="" /></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-header">
-                        <span><a href="blog_list_sidebar.html" class="mad-link">MD</a></span>
+                      <span>MD</span>
                       <h5 class="mad-team-member-name">
-                        <a href="pages_team.html">Jasmin Jensen</a>
+                        <a href="/team-jasmin-jensen/">Jasmin Jensen</a>
                       </h5>
                       <div class="mad-member-stat">Medical Director</div>
                       <div class="mad-social-icons">
@@ -430,12 +347,12 @@
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="pages_team.html" class="mad-team-member-photo"><img src="images/475x520_photo9.jpg"
+                  <a href="/team-juliana-pamplona/" class="mad-team-member-photo"><img src="/images/475x520_photo9.jpg"
                       alt="" /></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-header">
                       <h5 class="mad-team-member-name">
-                        <a href="pages_team.html">Juliana Pamplona</a>
+                        <a href="/team-juliana-pamplona/">Juliana Pamplona</a>
                       </h5>
                       <div class="mad-member-stat">Co-Founder</div>
                       <div class="mad-social-icons">
@@ -462,16 +379,15 @@
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="pages_team.html" class="mad-team-member-photo"><img src="images/475x520_photo1.jpg"
+                  <a href="/team-joline-murillo/" class="mad-team-member-photo"><img src="/images/475x520_photo1.jpg"
                       alt="" /></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-header">
-                        <span><a href="blog_list_sidebar.html" class="mad-link">RN, BSN,
-                          CHPPN</a></span>
+                      <span>RN, BSN,
+                        CHPPN</span>
                       <h5 class="mad-team-member-name">
-                        <a href="pages_team.html">Joline Murillo</a>
+                        <a href="/team-joline-murillo/">Joline Murillo</a>
                       </h5>
-                      <div class="mad-member-stat">RN, BSN, CHPPN</div>
                       <div class="mad-member-stat">Founder & Executive Director</div>
                       <div class="mad-social-icons">
                         <ul class="justify-content-center">
@@ -497,6 +413,7 @@
             </div>
             <!--================ End Of Team Members ================-->
           </div>
+          <!-- Other Ohana End -->
         </div>
 
         <!-- CTA -->
@@ -537,102 +454,25 @@
 
 
         <!--================ Footer ================-->
-        <footer id="mad-footer" class="">
-          <!--================ Footer row ================-->
-          <div class="container">
-            <div class="mad-footer-main">
-              <div class="row justify-content-between vr-size-1 hr-size-1">
-                <div class="col-xl-3 col-lg-6 col-sm-12">
-                  <!--================ Widget ================-->
-                  <section class="mad-widget">
-                    <a href="index.html" class="mad-logo content-element-3"><img src="images/content/logo2.png"
-                        alt="" /></a>
-                    <!-- <div class="content-element-3">
-                    <p> Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna, endrerit sit
-                      amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. </p>
-                  </div> -->
-                    <a href="pages_contact_v1.html" class="btn style-2"><span>Support Our Mission</span><i><img
-                          src="charity_icons_svg/btn_dir.svg" alt="" /></i></a>
-                  </section>
-                  <!--================ End of Widget ================-->
-                </div>
-                <div class="col-xl-2 col-lg-3 col-sm-6">
-                  <!--================ Widget ================-->
-                  <section class="mad-widget">
-                    <h6 class="mad-widget-title">Site Map</h6>
-                    <ul class="mad-vr-list">
-                      <li><a href="pages_about.html">Our Story</a></li>
-                      <li><a href="pages_team.html">Our Mission & Vision</a></li>
-                      <li><a href="pages_team.html">Family Stories</a></li>
-                      <li><a href="pages_team.html">Volunteer</a></li>
-                    </ul>
-                  </section>
-                  <!--================ End of Widget ================-->
-                </div>
-                <div class="col-xl-2 col-lg-3 col-sm-6">
-                  <!--================ Widget ================-->
-                  <section class="mad-widget">
-                    <h6 class="mad-widget-title">Our Care</h6>
-                    <ul class="mad-vr-list">
-                      <li><a href="pages_what_we_do.html">Respite Care</a></li>
-                      <li><a href="pages_what_we_do.html">Theraputic Activites</a></li>
-                      <li><a href="pages_what_we_do.html">Community Engagement</a></li>
-                      <li><a href="pages_what_we_do.html">End of Life Care</a></li>
-                      <li><a href="pages_what_we_do.html">Bereavement Support</a></li>
-                    </ul>
-                  </section>
-                  <!--================ End of Widget ================-->
-                </div>
-                <div class="col-xl-3 col-lg-6 col-sm-6">
-                  <!--================ Widget ================-->
-                  <section class="mad-widget">
-                    <h6 class="mad-widget-title">Contact Us</h6>
-                    <ul class="mad-vr-list mad-map-info">
-                      <li>
-                        <img src="charity_icons_svg/location.svg" alt="" class="svg" />
-                        <span>Honolulu HI <a href="pages_contact_v1.html" class="mad-link">Get Directions</a> </span>
-                      </li>
-                      <li>
-                        <img src="charity_icons_svg/clock.svg" alt="" class="svg" />
-                        <span>Monday - Friday: 9AM - 5PM</span>
-                      </li>
-                      <li>
-                        <img src="charity_icons_svg/phone.svg" alt="" class="svg" />
-                        <span> +1 808 555 1234 </span>
-                      </li>
-                      <li>
-                        <img src="charity_icons_svg/email.svg" alt="" class="svg" />
-                        <a href="pages_contact_v1.html">info@haleanelalani.com</a>
-                      </li>
-                    </ul>
-                  </section>
-                  <!--================ End of Widget ================-->
-                </div>
-              </div>
-            </div>
-            <p class="copyrights mt-5">Copyright © 2026 <a href="index.html">Hale Anelalani</a>. All Rights Reserved.
-            </p>
-          </div>
-          <!--================ End of Footer row ================-->
-        </footer>
+        {% include 'footer.html' %}
         <!--================ End of Footer ================-->
       </div>
     </div>
-    <script src="vendors/modernizr.js"></script>
-    <script src="vendors/jquery-3.6.0.min.js"></script>
-    <script src="vendors/jquery.easing.1.3.min.js"></script>
-    <script src="vendors/monkeysan.jquery.nav.1.0.js"></script>
-    <script src="vendors/monkeysan.validator.min.js"></script>
-    <script src="vendors/monkeysan.tabs.min.js"></script>
-    <script src="vendors/handlebars-v4.0.5.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
-    <script src="vendors/retina.min.js"></script>
-    <script src="vendors/mad.customselect.js"></script>
-    <script src="js/modules/mad.alert-box.min.js"></script>
-    <script src="js/modules/mad.newsletter-form.min.js"></script>
-    <script src="js/modules/mad.sticky-header-section.min.js"></script>
-    <script src="js/mad.app.js"></script>
+    <script src="/vendors/modernizr.js"></script>
+    <script src="/vendors/jquery-3.6.0.min.js"></script>
+    <script src="/vendors/jquery.easing.1.3.min.js"></script>
+    <script src="/vendors/monkeysan.jquery.nav.1.0.js"></script>
+    <script src="/vendors/monkeysan.validator.min.js"></script>
+    <script src="/vendors/monkeysan.tabs.min.js"></script>
+    <script src="/vendors/handlebars-v4.0.5.min.js"></script>
+    <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="/vendors/retina.min.js"></script>
+    <script src="/vendors/mad.customselect.js"></script>
+    <script src="/js/modules/mad.alert-box.min.js"></script>
+    <script src="/js/modules/mad.newsletter-form.min.js"></script>
+    <script src="/js/modules/mad.sticky-header-section.min.js"></script>
+    <script src="/js/mad.app.js"></script>
 </body>
 
 </html>
