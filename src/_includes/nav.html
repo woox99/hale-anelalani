@@ -6,10 +6,10 @@
                     <a href="/" class="mad-logo"><img src="/images/content/logo.png" alt=""
                             style="height:80px" /></a>
                 </div>
-                <div class="mad-header-item">
+                <div class="mad-header-item mt-4">
                     <nav class="mad-navigation-container">
                         <ul class="mad-navigation mad-navigation--vertical-sm">
-                            <li class="menu-item current-menu-item">
+                            <li class="menu-item {% if page.url == '/' %}current-menu-item{% endif %}">
                                 <a href="/">Home</a>
                             </li>
                             <li class="menu-item menu-item-has-children">
@@ -47,7 +47,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children">
-                                <a href="/family-stories/">Family Stories</a>
+                                <a href="#">Family Stories</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item">
                                         <a href="/read-davins-story/">Davin's Story</a>
@@ -63,10 +63,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item {% if page.url == '/our-hale/' %}current-menu-item{% endif %}">
                                 <a href="/our-hale/">Our Hale</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item {% if page.url == '/volunteer/' %}current-menu-item{% endif %}">
                                 <a href="/volunteer/">Volunteer</a>
                             </li>
                         </ul>
