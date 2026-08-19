@@ -10,6 +10,8 @@
   <meta name="description" content="" />
   <!--================ Mobile specific metas ================-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--================ Favicon ================-->
+  <link rel="icon" href="/images/content/icon.png" />
   <!--================ Google web fonts ================-->
   <link
     href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -35,24 +37,57 @@
       {% include 'nav.html' %}
       <!--================ End of Header ================-->
 
+
+
       <!--================ Breadcrumb ================-->
-      <div class="mad-breadcrumb with-bg-img with-overlay" data-bg-image-src="/images/content/our-story/team.png">
+      <div class="mad-breadcrumb simple-type mb-3">
+        <div class="container wide">
+          <h1 class="mb-2">Our Story</h1>
+          <nav class="mad-breadcrumb-path">
+            <span><a href="index.html" class="mad-link">Home</a></span> / Core Values</span>
+          </nav>
+        </div>
+      </div>
+      <!--================ End of Breadcrumb ================-->
+
+      <!-- ================ Breadcrumb ================-->
+      <!-- <div class="mad-breadcrumb with-bg-img with-overlay" data-bg-image-src="/images/content/our-story/team.png">
         <div class="container wide">
           <h1 class="mad-page-title">Our Story</h1>
           <nav class="mad-breadcrumb-path">
             <span><a href="index.html" class="mad-link">Home</a></span> / <span>Our Story</span>
           </nav>
         </div>
+      </div> -->
+      <!--================ End of Breadcrumb ================ -->
+
+      <img src="/images/content/our-story/value-tree.png" alt="" style="width: 100vw; opacity: 0.75;">
+
+      <div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
+        <ul>
+          <li class="mad-text-medium"><strong style="color: #b274dc;">Manawanui</strong> - We support others in
+            patience, courage and perseverance.</li>
+          <li class="mad-text-medium"><strong style="color: #a3dccc;">Malama</strong> - We nurture and care with
+            compassion.</li>
+          <li class="mad-text-medium"><strong style="color: #f1856f;">Aloha</strong> - We lead with unconditional love.
+          </li>
+          <li class="mad-text-medium"><strong style="color: #f2ca4b;">Lokahi</strong> - We create harmony through
+            partnership.</li>
+          <li class="mad-text-medium"><strong style="color: #79d1f3;">Ho’ola</strong> - We foster healing in body, mind
+            and spirit.</li>
+          <li class="mad-text-medium"><strong style="color: #b4d74d;">Pono</strong> - We honor every child with dignity
+            and integrity.</li>
+        </ul>
       </div>
-      <!--================ End of Breadcrumb ================-->
 
       <!-- Mission Statement -->
-      <div class="mad-section with-texture10 mad-colorizer--scheme-color no-pb">
+      <div class="mad-section with-texture10 mad-colorizer--scheme-color no-pb"
+        style="border:1px solid #f3f3f3; margin-top: 4rem; margin-bottom: 4rem;">
         <div class="mad-texture-holder">
           <span class="mad-img-texture bg-move"><img src="/images/texture_move4.svg" alt="" class="svg" /></span>
         </div>
         <div class="align-center">
-          <div class="content-element-6">
+          <div class="content-element-6 p-4">
             <div class="mad-pre-title">work with passion and intent</div>
             <h2 class="mad-title">Ho’ohana</h2>
             <p class="mad-text-medium">Our Mission is to provide compassionate ohana centered care for keiki with
@@ -82,93 +117,8 @@
       <!-- Mission Statement End -->
 
 
-      <!-- Values Tree -->
-      <div class="mad-content no-pt no-pb">
-        <div class="mad-section mad-colorizer--scheme-color">
-          <!-- <div class="mad-texture-holder">
-            <span class="mad-img-texture bg-move"><img src="/images/texture_move1.svg" alt="" class="svg" /></span>
-          </div> -->
-          <div class="mad-title-wrap align-center">
-            <div class="mad-pre-title">Our Core Values</div>
-            <h2 class="mad-title">Na Waiwai Ko'o</h2>
-            <!-- <p> Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum <br />
-              vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam er at v olutpat. Duis ac turpis. Integer
-              <br /> rutrum ante eu lacus. Vestibulum libero nisl, porta vel.
-            </p> -->
-          </div>
-          <div class="container">
-            <div class="mad-storyline">
-              <div class="mad-col">
-                <div class="mad-story-item">
-                  <span class="mad-story-date">1</span>
-                  <div class="mad-story-inner">
-                    <div class="mad-story-content">
-                      <h4 class="mad-title">1. Manawanui <span style="opacity: 0.7;">- We support others in patience,
-                          courage and perseverance.</span></h4>
-                      <!-- <p> Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada
-                        at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                        Suspendisse sollicitudin velit sed leo. </p> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="mad-story-item right-col">
-                  <span class="mad-story-date">2</span>
-                  <div class="mad-story-inner">
-                    <div class="mad-story-content">
-                      <h4 class="mad-title">2. Malama <span style="opacity: 0.7;">- We nurture and care with
-                          compassion.</span></h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="mad-story-item">
-                  <span class="mad-story-date">3</span>
-                  <div class="mad-story-inner">
-                    <div class="mad-story-content">
-                      <h4 class="mad-title">3. Aloha <span style="opacity: 0.7;">- We lead with unconditional
-                          love.</span></h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="mad-story-item right-col">
-                  <span class="mad-story-date">4</span>
-                  <div class="mad-story-inner">
-                    <div class="mad-story-content">
-                      <h4 class="mad-title">4. Lokahi <span style="opacity: 0.7;">- We create harmony through
-                          partnership.</span></h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="mad-story-item">
-                  <span class="mad-story-date">5</span>
-                  <div class="mad-story-inner">
-                    <div class="mad-story-content">
-                      <h4 class="mad-title">5. Ho’ola <span style="opacity: 0.7;">- We foster healing in body, mind and
-                          spirit.</span></h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="mad-story-item right-col">
-                  <span class="mad-story-date">6</span>
-                  <div class="mad-story-inner">
-                    <div class="mad-story-content">
-                      <h4 class="mad-title">6. Pono <span style="opacity: 0.7;">- We honor every child with dignity and
-                          integrity.</span></h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="mad-img">
-          <img src="/images/1792x680_img1.jpg" alt="" />
-        </div> -->
-      </div>
-      <!-- Values Tree End -->
-
       <!--================ Breadcrumb ================-->
-      <div class="mad-breadcrumb simple-type">
+      <div class="mad-breadcrumb simple-type" style="margin-top: 6rem;">
         <div class="container wide">
           <nav class="mad-breadcrumb-path">
             <span><a href="index.html" class="mad-link">Home</a></span> / Our
@@ -244,25 +194,24 @@
           {% include 'team.html' %}
 
           <!--================ Breadcrumb ================-->
-          <div class="mad-breadcrumb simple-type">
+          <!-- <div class="mad-breadcrumb simple-type">
             <div class="container wide">
               <nav class="mad-breadcrumb-path">
                 <span><a href="/" class="mad-link">Home</a></span> / Our
                 Hale</span>
               </nav>
             </div>
-          </div>
+          </div> -->
           <!--================ End of Breadcrumb ================-->
 
           <!-- Our Hale -->
-          <div class="mad-section">
+          <!-- <div class="mad-section">
             <div class="mad-title-wrap align-center">
               <div class="mad-pre-title">tour the home</div>
               <h2 class="mad-title">Our Hale</h2>
             </div>
             <div class="mad-content no-pd">
               <div class="container">
-                <!-- Gallery -->
                 <div class="container">
                   <div class="content-element-4">
                     <div class="mad-gallery item-col-3">
@@ -293,20 +242,19 @@
                     </div>
                   </div>
                 </div>
-                <!-- Gallery End -->
                 <div class="align-center mt-5">
                   <a href="/our-hale/" class="btn btn-big style-2">Take a Tour</a>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Our Hale End -->
         </div>
 
       </div>
 
       <!-- CTA -->
-      <div class="container mb-5 pb-5">
+      <div class="container pb-5" style="margin-bottom: 6rem;">
         <div class="mad-banners item-col-4">
           <div class="mad-col">
             <a href="pages_services.html" class="mad-banner">
