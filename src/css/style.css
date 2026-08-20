@@ -5688,7 +5688,7 @@ table.mad-table--vertical tfoot tr th {
 }
 
 .mad-icon-box .mad-icon-box-icon .svg {
-    height: 4.875rem;
+    height: 7.25rem;
 }
 
 .mad-icon-boxes:not(.hr-type):not(.grid-type):not(.small-size):not(.icon-size-2):not(.align-center) .mad-icon-box {
@@ -5740,7 +5740,7 @@ table.mad-table--vertical tfoot tr th {
 }
 
 .mad-icon-boxes.with-hover.icon-size-3 .mad-icon-box .mad-icon-box-icon .svg {
-    height: 2.5rem;
+    height: 3rem;
 }
 
 .mad-colorizer--scheme-color-6 .mad-icon-boxes>.mad-col:not(:last-child) .mad-icon-box:after {
