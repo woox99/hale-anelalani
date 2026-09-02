@@ -9264,7 +9264,7 @@ form .btn.wide,
 
 [class*="mad-img-texture"] {
     position: absolute;
-    top: 6.25rem;
+    /* top: 6.25rem; */
     left: 1.5rem;
 }
 
