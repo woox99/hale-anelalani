@@ -11,7 +11,8 @@
   <!--================ Mobile specific metas ================-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--================ Favicon ================-->
-  <link rel="icon" href="/images/content/icon.png" />
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/favicon.ico">
   <!--================ Google web fonts ================-->
   <link
     href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -56,26 +57,32 @@
 
       <div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
         <ul>
-          <li class="mad-text-medium"><strong style="color: #b274dc;">Manawanui</strong> - We support others in
+          <li class="mad-text-medium"><strong class="mad-text-big" style="color: #b274dc;">Manawanui</strong> - We
+            support others in
             patience, courage and perseverance.</li>
-          <li class="mad-text-medium"><strong style="color: #a3dccc;">Malama</strong> - We nurture and care with
+          <li class="mad-text-medium"><strong class="mad-text-big" style="color: #a3dccc;">Malama</strong> - We nurture
+            and care with
             compassion.</li>
-          <li class="mad-text-medium"><strong style="color: #f1856f;">Aloha</strong> - We lead with unconditional love.
+          <li class="mad-text-medium"><strong class="mad-text-big" style="color: #f1856f;">Aloha</strong> - We lead with
+            unconditional love.
           </li>
-          <li class="mad-text-medium"><strong style="color: #f2ca4b;">Lokahi</strong> - We create harmony through
+          <li class="mad-text-medium"><strong class="mad-text-big" style="color: #f2ca4b;">Lokahi</strong> - We create
+            harmony through
             partnership.</li>
-          <li class="mad-text-medium"><strong style="color: #79d1f3;">Ho’ola</strong> - We foster healing in body, mind
+          <li class="mad-text-medium"><strong class="mad-text-big" style="color: #79d1f3;">Ho’ola</strong> - We foster
+            healing in body, mind
             and spirit.</li>
-          <li class="mad-text-medium"><strong style="color: #b4d74d;">Pono</strong> - We honor every child with dignity
+          <li class="mad-text-medium"><strong class="mad-text-big" style="color: #b4d74d;">Pono</strong> - We honor
+            every child with dignity
             and integrity.</li>
         </ul>
       </div>
 
       <!-- Mission Statement -->
-      <div class="mad-section with-texture10 no-pb"
-        style="border:1px solid #f3f3f3; margin-top: 4rem; margin-bottom: 4rem;">
+      <div class="mad-section with-texture10 no-pb" style="margin-top: 4rem; margin-bottom: 4rem;">
         <div class="mad-texture-holder">
-          <span class="mad-img-texture bg-move"><img src="/images/content/our-story/47776.jpg" style="opacity:0.1;" alt="" class="svg" /></span>
+          <span class="mad-img-texture bg-move"><img src="/images/content/our-story/47776.jpg" style="opacity:0.1;"
+              alt="" class="svg" /></span>
         </div>
         <div class="align-center">
           <div class="content-element-6 p-4">
@@ -244,39 +251,10 @@
       </div>
 
       <!-- CTA -->
-      <div class="container pb-5" style="margin-bottom: 6rem;">
-        <div class="mad-banners item-col-4">
-          <div class="mad-col">
-            <a href="pages_services.html" class="mad-banner">
-              <div class="mad-banner-content">
-                <div class="mad-banner-aligner">
-                  <h3 class="mad-banner-title">Help Build Hawaii’s First Pediatric Respite and Hospice Home
-                  </h3>
-                  <p> Join us in creating a home where Hawaii’s keiki and their ‘ohana can find rest, healing
-                    and
-                    hope.</p>
-                  <div class="btn btn-big style-3">
-                    <span>Donate</span><i class="icon"><img src="charity_icons_svg/heart.svg" alt="" /></i>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="mad-col">
-            <a href="pages_services.html" class="mad-banner banner-3">
-              <div class="mad-banner-content">
-                <h3 class="mad-banner-title"> Be the Heart Behind Hale Anelalani </h3>
-                <p> Volunteer your time, talent or treasure to help us build a place where children are
-                  surrounded by love and families find comfort and peace.</p>
-                <div class="btn btn-big"><span>Register to Volunteer Today</span><span class="icon material-icons">
-                    arrow_forward_ios
-                  </span></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      {% include 'cta.html' %}
+      <br style="margin-bottom: 4rem;">
       <!--  CTA End -->
+
 
 
       <!--================ Footer ================-->
