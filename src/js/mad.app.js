@@ -996,69 +996,69 @@ var Mad = (function ($) {
     ---------------------------------------- */
 
   /* ----------------------------------------
-        Preloader
+        Preloader (REMOVED BECAUSE OF BACK PAGE CACHE ISSUE)
     ---------------------------------------- */
 
-  App.modules.preloader = function () {
-    var $preloader = $('.mad-preloader'),
-      leftPos = parseInt($preloader.css('margin-left'), 10),
-      topPos = parseInt($preloader.css('margin-top'), 10),
-      $w = $(window),
-      $nav = $('.mad-navigation, .mad-navigation-vertical')
+  // App.modules.preloader = function () {
+  //   var $preloader = $('.mad-preloader'),
+  //     leftPos = parseInt($preloader.css('margin-left'), 10),
+  //     topPos = parseInt($preloader.css('margin-top'), 10),
+  //     $w = $(window),
+  //     $nav = $('.mad-navigation, .mad-navigation-vertical')
 
-    if ($nav.length) {
-      $nav
-        .off('click.MadPreloader')
-        .on('click.MadPreloader', 'a', function (event) {
-          var $this = $(this),
-            $circle = $('<div></div>', {
-              style:
-                'left: ' + event.clientX + 'px; top: ' + event.clientY + 'px;',
-              class: 'mad-preloader-circle'
-            })
+  //   if ($nav.length) {
+  //     $nav
+  //       .off('click.MadPreloader')
+  //       .on('click.MadPreloader', 'a', function (event) {
+  //         var $this = $(this),
+  //           $circle = $('<div></div>', {
+  //             style:
+  //               'left: ' + event.clientX + 'px; top: ' + event.clientY + 'px;',
+  //             class: 'mad-preloader-circle'
+  //           })
 
-          if ($body.hasClass('mad-body--moving-to-another-page')) {
-            $circle.appendTo($body)
+  //         if ($body.hasClass('mad-body--moving-to-another-page')) {
+  //           $circle.appendTo($body)
 
-            setTimeout(function () {
-              $circle.addClass('mad-preloader-circle--appearing')
-            }, 20)
-          }
-        })
-    }
+  //           setTimeout(function () {
+  //             $circle.addClass('mad-preloader-circle--appearing')
+  //           }, 20)
+  //         }
+  //       })
+  //   }
 
-    if (!$preloader.length) return
+  //   if (!$preloader.length) return
 
-    $body
-      .off('mousemove.MadPreloader')
-      .on('mousemove.MadPreloader', function (event) {
-        $preloader.css({
-          'margin-left': leftPos - ($w.width() / 2 - event.pageX),
-          'margin-top':
-            topPos - ($w.height() / 2 - (event.pageY - $w.scrollTop()))
-        })
-      })
-      .jQueryImagesLoaded()
-      .then(function () {
-        $preloader.addClass('mad-preloader--disappearing')
-        setTimeout(function () {
-          $preloader.remove()
-          $body.off('mousemove.MadPreloader')
-        }, 700)
-        // can be removed in production (demo only):
-        if (window.location.hash == '#mad-footer') {
-          $('html, body').stop().animate(
-            {
-              scrollTop: $doc.height()
-            },
-            {
-              duration: self.ANIMATIONDURATION,
-              easing: self.ANIMATIONEASING
-            }
-          )
-        }
-      })
-  }
+  //   $body
+  //     .off('mousemove.MadPreloader')
+  //     .on('mousemove.MadPreloader', function (event) {
+  //       $preloader.css({
+  //         'margin-left': leftPos - ($w.width() / 2 - event.pageX),
+  //         'margin-top':
+  //           topPos - ($w.height() / 2 - (event.pageY - $w.scrollTop()))
+  //       })
+  //     })
+  //     .jQueryImagesLoaded()
+  //     .then(function () {
+  //       $preloader.addClass('mad-preloader--disappearing')
+  //       setTimeout(function () {
+  //         $preloader.remove()
+  //         $body.off('mousemove.MadPreloader')
+  //       }, 700)
+  //       // can be removed in production (demo only):
+  //       if (window.location.hash == '#mad-footer') {
+  //         $('html, body').stop().animate(
+  //           {
+  //             scrollTop: $doc.height()
+  //           },
+  //           {
+  //             duration: self.ANIMATIONDURATION,
+  //             easing: self.ANIMATIONEASING
+  //           }
+  //         )
+  //       }
+  //     })
+  // }
 
   /* ----------------------------------------
         End of Preloader
