@@ -1,3 +1,6 @@
+// Get year for copyright
+document.getElementById('year').textContent = new Date().getFullYear();
+
 var Mad = (function ($) {
   'use strict'
 
