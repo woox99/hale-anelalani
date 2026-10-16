@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/woox99/hale-anelalani#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.7"
   }
 }
