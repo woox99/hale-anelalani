@@ -7,8 +7,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("src/php");
     eleventyConfig.addPassthroughCopy("src/vendors");
-    // eleventyConfig.addPassthroughCopy("src/robots.txt");
-    // eleventyConfig.addPassthroughCopy("src/sitemap.xml");
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
+    eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
     return {
         dir: {
